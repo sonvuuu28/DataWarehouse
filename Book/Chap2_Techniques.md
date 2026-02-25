@@ -203,7 +203,7 @@ Dùng để:
 
 ## VI. Advanced Fact Table Techniques
 1. SK có hoặc ko đều được
-2. Tránh Centipede Fact Table (dim junk)
+2. Tránh Centipede Fact Table (dim junk). Nên cán dẹp các bảng hierarcy
 3. Data số có thể thuộc fact hoặc dim (tính toán, conversion ở case 8 -> fact, Filter -> Dim)
 4. Tính lag (Ở accumulating snapshot tránh để user tính tay -> hãy dùng lag)
 5. Làm chi tiết ko làm header (Thay vì Orders, Order_Items -> làm 1 th)
