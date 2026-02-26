@@ -7,7 +7,7 @@
 
 * Ko ép làm đủ business process
 
-![alt text](images/image-8.png)
+![alt text](images/Chap4/image-8.png)
 
 ## II. Mô hình Inventory
 * Có 3 mô hình
@@ -26,7 +26,7 @@
     * Giữ 60 ngày gần nhất
     * periodic lớn hơn -> tính theo tuần hẵn cập nhật
 
-![alt text](images/image-9.png)
+![alt text](images/Chap4/image-9.png)
 
 
 * **Nâng cấp fact** bằng thêm metrics mang tính business hơn. Dashboard chỉ group by date là ra insight
@@ -36,7 +36,7 @@
         * *Tồn này là tốt hay kẹt?*
         * *Bao lâu thì hết hàng?*
 
-![alt text](images/image-10.png)
+![alt text](images/Chap4/image-10.png)
 
 
 * `Quantity sold`: 
@@ -54,7 +54,7 @@
     * = 120 hộp × 30k = 3.6 triệu
     * Họ so được: price value – cost value = margin tiềm năng
 
-![alt text](images/image-11.png)
+![alt text](images/Chap4/image-11.png)
 
 
 ### 2. Transaction Inventory
@@ -110,7 +110,7 @@ fact_inventory_pick
 ```
 
 
-![alt text](images/image-12.png)
+![alt text](images/Chap4/image-12.png)
 
 ---
 
@@ -183,9 +183,9 @@ fact_inventory_pick
 
 * Thực hiện phép UPDATE khác với 2 cái kia only insert
 
-![alt text](images/image-13.png)
+![alt text](images/Chap4/image-13.png)
 
-![alt text](images/image-14.png)
+![alt text](images/Chap4/image-14.png)
 
 ---
 

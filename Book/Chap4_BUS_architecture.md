@@ -3,14 +3,14 @@
 ## I. Enterprise Data Warehouse Bus Architecture
 * EDW lớn phức tạp cần có sơ đồ kiến trúc tổng quát thể hiện được các quy trình và bối cảnh
 
-![alt text](images/Chap4_Bus/image.png)
+![alt text](images/Chap4/image.png)
 
 ### 1. Bus Matrix
 * Bus Matrix giúp xác định các dim liên quan business process.
 
 * Bus Matrix là bản đồ tổng thể, trực quan, dễ dùng → lập kế hoạch, quản lý dự án, giao tiếp nội bộ và với lãnh đạo, quản trị dữ liệu.
 
-![alt text](images/Chap4_Bus/image-1.png)
+![alt text](images/Chap4/image-1.png)
 
 ---
 
@@ -20,7 +20,7 @@
 
 * Stakeholder Matrix = tập trung vào người và nhóm → ai cần tham gia, ai quan tâm → quản lý dự án hiệu quả.
 
-![alt text](images/Chap4_Bus/image-2.png)
+![alt text](images/Chap4/image-2.png)
 
 ## II. Mistake khi làm Bus
 ### 1. Hàng
@@ -43,11 +43,11 @@
     - Drill Across: Cho các metrics của các fact về cùng 1 report
     - Kết nối `fact_sales` (Sales Qty), `fact_inventory` (Inventory Qty), `fact_orders` (Open Orders Qty) 👉 Tất cả hiển thị theo cùng Product (dim_product).
     
-    ![alt text](images/Chap4_Bus/image-3.png)
+    ![alt text](images/Chap4/image-3.png)
 
 ## IV. Shrunken DIM (Bẻ Hieracy)
 ### 1. Subset theo cột
-![alt text](images/Chap4_Bus/image-4.png)
+![alt text](images/Chap4/image-4.png)
 
 - Là **dim con** Chứa subset cột của dim cha
 

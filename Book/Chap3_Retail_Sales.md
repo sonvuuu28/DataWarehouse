@@ -179,7 +179,7 @@ Process này:
 
 * Gắn **FK** tới dim
 
-![alt text](images/image.png)
+![alt text](images/Chap3/image.png)
 
 
 ---
@@ -235,9 +235,9 @@ Process này:
     | LagDay               | “Hôm nay / hôm qua / hôm kia”        |
 
 
-![alt text](images/image-1.png)
+![alt text](images/Chap3/image-1.png)
 
-![alt text](images/image-2.png)
+![alt text](images/Chap3/image-2.png)
 
 ---
 
@@ -274,13 +274,13 @@ Theo giờ, phút luôn thì có **2 cách**
     * VD: `Unit price`, cá nhân mình nghĩ sẽ để ở cả 2
 
 
-![alt text](images/image-3.png)
+![alt text](images/Chap3/image-3.png)
 
 ### 4. Store Dimension
 * `Store` ko chỉ là **địa điểm** mà là **thực thể kinh doanh** 
 * Store sẽ liên quan đến Store → City-State → County → State → Zip (City-State vì có city trùng tên ở bang khác nhau)
 
-![alt text](images/image-4.png)
+![alt text](images/Chap3/image-4.png)
 
 * Khi một DIM có chứa các ngày mà BI user muốn filter và drill down theo calendar / fiscal, thì nên dùng `role-playing Date Dimension` (thường qua VIEW) để làm cho dimension “giàu ngữ nghĩa” (semantic-rich) và dễ dùng cho BI.
 
@@ -313,7 +313,7 @@ Theo giờ, phút luôn thì có **2 cách**
 
 * Không để null các metrics. Hãy dùng giá trị "Unknown"
 
-![alt text](images/image-5.png)
+![alt text](images/Chap3/image-5.png)
 
 
 ---
@@ -346,7 +346,7 @@ Theo giờ, phút luôn thì có **2 cách**
 
 * Cũng có FK attribute như fact bình thường. Nhưng lại ko có metrics đo lường hay extended metrics. Đặc biệt có thêm dòng **Promotion Count** để đếm.
 
-![alt text](images/image-6.png)
+![alt text](images/Chap3/image-6.png)
 
 ---
 
@@ -411,4 +411,4 @@ Chỉ ứng dụng cho ETL ko phải user BI
 
 
 
-![alt text](images/image-7.png)
+![alt text](images/Chap3/image-7.png)
