@@ -12,7 +12,7 @@ Các process này sinh ra những chỉ số cực kỳ quan trọng (**metrics*
 **Chương này đề cập junk, degenerate dim.**
 
 ## I. Bus Matrix
-![alt text](image.png)
+![alt text](Images/Chap6/image.png)
 
 - ***Quoting** – Báo giá*
 - ***Ordering** – Đặt hàng*
@@ -27,7 +27,7 @@ Các process này sinh ra những chỉ số cực kỳ quan trọng (**metrics*
 dim xung quanh
 - order date, requested ship date, product, customer, sales rep(sale representative), and deal.
 
-![alt text](image-1.png)
+![alt text](Images/Chap6/image-1.png)
 
 ### 1. Fact Normalization
 Nhiều người ko thích để full measurement ở 1 dòng fact, họ muốn 
@@ -56,7 +56,7 @@ Cái đầu tiên ngu ngốc sinh ra nhiều record.
 ### 2. DIM role playing
 Tạo view table từ dim gốc và alias name các col để phân biệt dim gốc.
 
-![alt text](image-2.png)
+![alt text](Images/Chap6/image-2.png)
 
 ---
 
@@ -77,7 +77,7 @@ create view req_ship_date
     - có thể bao quanh bởi nhiều cấp địa lý khác nhau
     - mô hình tổ chức khác hàng. Mua 1 chỗ `ship to`. Thanh toán chỗ khác `bill-to` (cty con mua, thanh toán công ty mẹ)
 
-    ![alt text](image-3.png)
+    ![alt text](Images/Chap6/image-3.png)
 
 ---
 
@@ -140,14 +140,14 @@ Ví dụ thực tế:
 
 * Không có order ⇒ **không có record**
 
-![alt text](image-4.png)
+![alt text](Images/Chap6/image-4.png)
 
 ---
 
 ### 4. Deal DIM
 Deal đi theo allowance, Terms, Incentive.
 
-![alt text](image-5.png)
+![alt text](Images/Chap6/image-5.png)
 #### ✅ Trường hợp 1: **đi theo combo cố định (correlated)**
 
 > **Flatten terms, allowance, incentive vào 1 `dim_deal`**
@@ -270,7 +270,7 @@ Quy tắc DE phải giải quyết mọi thứ trong DW, ko để User BI tính.
 
 Tính luôn metrics song song.
 
-![alt text](image-6.png)
+![alt text](Images/Chap6/image-6.png)
 
 ---
 
@@ -294,7 +294,7 @@ net_usd      = net_local * fx_to_usd
 Trường hợp phức tạp hơn, business yêu cầu
 - Manager ở bất kỳ nước nào xem số liệu ở bất kỳ currency nào
 
-![alt text](image-7.png)
+![alt text](Images/Chap6/image-7.png)
 
 
 | date_key   | source | destination | src_to_dest | dest_to_src |
@@ -332,7 +332,7 @@ Order là đơn đặt còn
 
 Invoice là hóa đơn (đơn đã giao)
 
-![alt text](image-8.png)
+![alt text](Images/Chap6/image-8.png)
 
 
 1. `Các measure trong Invoice Line`
@@ -373,7 +373,7 @@ Làm giàu metrics:
 
 Làm giàu bằng junk dim
 
-![alt text](image-9.png)
+![alt text](Images/Chap6/image-9.png)
 
 
 ---
@@ -410,7 +410,7 @@ Nhiều công ty gọi contribution là **margin**.
   * Lag
   * Multi Units (Lưu số đo ko lưu kết quả => ko bị mất lịch sử mặc dù ko dùng SCD type 2)
 
-![alt text](image-12.png)
+![alt text](Images/Chap6/image-12.png)
 
 
 ---
@@ -435,4 +435,4 @@ order_id | product | order_qty_retail_case | order_qty_scan_unit
 1001     | Coke    | 120                   | 720
 1002     | Coke    | 60                    | 360
 
-![alt text](image-13.png)
+![alt text](Images/Chap6/image-13.png)
